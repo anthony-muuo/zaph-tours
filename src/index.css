@@ -6,3 +6,8 @@
 body {
   font-family: "Roboto, sans-serif";
 }
+.line {
+  width: 30%;
+  margin: 1rem auto;
+  color: black;
+}
