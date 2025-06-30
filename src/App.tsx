@@ -1,7 +1,8 @@
+import Header from "./components/Header";
 const App = () => {
   return (
     <div>
-      <h3>Zaph tours</h3>
+      <Header />
     </div>
   );
 };
