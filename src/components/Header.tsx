@@ -20,7 +20,7 @@ const Header = () => {
             Exiciting Unique Adventure In Zaph Tour
           </Typography>
           <Typography variant="body2">+254 728970785</Typography>
-          <Button variant="contained">Sign In</Button>
+          <Button variant="contained">Book Now</Button>
         </Grid>
       </Grid>
     </Grid>
