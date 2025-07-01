@@ -46,7 +46,7 @@ const Featured = () => {
     },
   ];
   return (
-    <Grid>
+    <Grid sx={{ backgroundColor: "#f9f9f9" }}>
       <Typography
         sx={{
           textAlign: "center",

@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Featured from "./components/Featured";
 import Testimonials from "./components/Testimonials";
+import NewLetter from "./components/NewLetter";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Featured />
       <Testimonials />
+      <NewLetter />
     </div>
   );
 };
