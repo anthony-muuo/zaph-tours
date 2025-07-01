@@ -1,22 +1,21 @@
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Home from "./pages/Home";
 import Nav from "./components/Nav";
-import About from "./components/About";
-import Featured from "./components/Featured";
-import Testimonials from "./components/Testimonials";
-import NewLetter from "./components/NewLetter";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Nav />
-      <Hero />
-      <About />
-      <Featured />
-      <Testimonials />
-      <NewLetter />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/destination"
+          element={<h1>heello uko destination page</h1>}
+        />
+      </Routes>
+    </>
   );
 };
 

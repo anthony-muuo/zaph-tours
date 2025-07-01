@@ -1,5 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import { CiMenuBurger, CiSearch } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -9,23 +10,40 @@ const Nav = () => {
       container
       sx={{ alignItems: "center", justifyContent: "space-between" }}
     >
-      <Typography
-        variant="h4"
-        color="primary"
-        fontSize={"20px"}
-        sx={{
-          textTransform: "uppercase",
-          fontWeight: "bold",
-          letterSpacing: 2,
-        }}
-      >
-        Zaph Tours
-      </Typography>
+      <Link to="/" className="link">
+        <Typography
+          variant="h4"
+          color="primary"
+          fontSize={"20px"}
+          sx={{
+            textTransform: "uppercase",
+            fontWeight: "bold",
+            letterSpacing: 2,
+          }}
+        >
+          Zaph Tours
+        </Typography>
+      </Link>
       <Grid
         container
         sx={{ alignItems: "center", justifyContent: "space-between" }}
         spacing={4}
       >
+        <Link to="/destination" className="link">
+          <Typography
+            letterSpacing={"1.8px"}
+            textTransform={"uppercase"}
+            fontSize={"14px"}
+            sx={{
+              cursor: "pointer",
+              "&:hover": {
+                textDecoration: "underline",
+              },
+            }}
+          >
+            Destination
+          </Typography>
+        </Link>
         <Typography
           letterSpacing={"1.8px"}
           textTransform={"uppercase"}
@@ -37,7 +55,7 @@ const Nav = () => {
             },
           }}
         >
-          Destination
+          Trip Types
         </Typography>
         <Typography
           letterSpacing={"1.8px"}

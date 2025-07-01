@@ -16,3 +16,6 @@ body {
   margin: 1rem auto;
   color: black;
 }
+.link {
+  text-decoration: none;
+}

@@ -59,7 +59,7 @@ const Featured = () => {
       </Typography>
       <Grid container spacing={4} justifyContent="center" padding={2}>
         {destinations.map((dest, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4} sx={{ display: "flex" }}>
+          <Grid key={index} sx={{ display: "flex" }}>
             <Card
               sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}
             >
