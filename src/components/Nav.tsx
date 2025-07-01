@@ -44,32 +44,36 @@ const Nav = () => {
             Destination
           </Typography>
         </Link>
-        <Typography
-          letterSpacing={"1.8px"}
-          textTransform={"uppercase"}
-          fontSize={"14px"}
-          sx={{
-            cursor: "pointer",
-            "&:hover": {
-              textDecoration: "underline",
-            },
-          }}
-        >
-          Trip Types
-        </Typography>
-        <Typography
-          letterSpacing={"1.8px"}
-          textTransform={"uppercase"}
-          fontSize={"14px"}
-          sx={{
-            cursor: "pointer",
-            "&:hover": {
-              textDecoration: "underline",
-            },
-          }}
-        >
-          Contact
-        </Typography>
+        <Link to="/trip" className="link">
+          <Typography
+            letterSpacing={"1.8px"}
+            textTransform={"uppercase"}
+            fontSize={"14px"}
+            sx={{
+              cursor: "pointer",
+              "&:hover": {
+                textDecoration: "underline",
+              },
+            }}
+          >
+            Trip Types
+          </Typography>
+        </Link>
+        <Link to="/contacts" className="link">
+          <Typography
+            letterSpacing={"1.8px"}
+            textTransform={"uppercase"}
+            fontSize={"14px"}
+            sx={{
+              cursor: "pointer",
+              "&:hover": {
+                textDecoration: "underline",
+              },
+            }}
+          >
+            Contact
+          </Typography>
+        </Link>
       </Grid>
       <Grid
         container
